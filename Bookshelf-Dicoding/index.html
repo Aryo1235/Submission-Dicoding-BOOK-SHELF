@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <header>
+    <div class="header-title">
+      <h1>Bookshelf Apps</h1>
+    </div>
+  </header>
+  <body>
+    <main>
+      <div id="content">
+        <article class="content__1">
+          <section class="input__section" id="inputSection">
+            <h2 class="h2__inputSection">New Book</h2>
+            <form id="inputBook" class="form__content">
+              <div class="input" id="sectionJudul">
+                <small class="error-display" id="errorJudul">*required</small>
+                <br />
+                <input
+                  id="judul_buku"
+                  type="text"
+                  class="form__input"
+                  placeholder="Tuliskan Judul...."
+                />
+                <label for="judul_buku" class="form__label">Judul:</label>
+                <div class="form__shadow"></div>
+              </div>
+              <div class="input" id="sectionPenulis">
+                <small class="error-display" id="errorPenulis">*required</small
+                ><br />
+                <input
+                  id="penulis"
+                  type="text"
+                  class="form__input"
+                  placeholder="Tuliskan Penulis..."
+                />
+                <label for="penulis" class="form__label">Penulis:</label>
+                <div class="form__shadow"></div>
+              </div>
+              <div class="input" id="sectionTahun">
+                <small class="error-display" id="errorTahun">*required</small
+                ><br />
+                <input
+                  id="tahun"
+                  type="number"
+                  class="form__input"
+                  placeholder="Tuliskan Tahunnya...."
+                />
+                <label for="tahun" class="form__label">TAHUN:</label>
+                <div class="form__shadow"></div>
+              </div>
+              <div class="input_inline">
+                <label for="inputBookIsComplete">Telah dibaca</label>
+                <input id="inputBookIsComplete" type="checkbox" />
+              </div>
+              <div class="book__button">
+                <button id="buku_sub" type="button" class="form__submit">
+                  <span>add book</span>
+                </button>
+              </div>
+            </form>
+          </section>
+        </article>
+      </div>
+      <article class="content__2">
+        <section class="search_section book_shelf" id="searchSection">
+          <div class="search__section">
+            <h2 class="h2__inputSection">Cari Buku</h2>
+            <form id="searchBook" class="form__search">
+              <label for="searchBookTitle">Judul</label>
+              <input
+                id="cariBuku"
+                type="text"
+                placeholder="Tuliskan disini..."
+              />
+              <button id="searchSubmit" type="submit">search</button>
+            </form>
+          </div>
+          <div id="searchResult" class="book_list" style="width: 100%"></div>
+        </section>
+      </article>
+      <section class="book_shelf" id="bookShelfUncompleted">
+        <h2 id="uncompletedH2">Belum dibaca</h2>
+        <div id="belum_dibaca" class="book_list"></div>
+      </section>
+      <section class="book_shelf" id="bookShelfCompleted">
+        <h2 id="completedH2">Telah dibaca</h2>
+        <div id="sudah_dibaca" class="book_list"></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
